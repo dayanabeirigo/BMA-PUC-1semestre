@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Doações não Perecíveis</title>
+    <link rel="stylesheet" href="cadastroDoacoes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+      <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-0 bg-light">
+
+          <img src="BMA.jpeg" alt="Banco Municipal de Alimentos">
+        </a>
+        <ul class="nav nav-pills d-flex justify-content-around flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link link-dark" aria-current="page">
+                <i class="fa-solid fa-user"></i>
+                <p>Id do Usuário</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <p>Doações</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <i class="fa-solid fa-basket-shopping"></i>    
+              <p>Cestas</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+               <i class="fa-solid fa-bars-staggered"></i>
+               <p>Triagem</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+                <i class="fa-solid fa-users"></i>
+              <p>Beneficiários</p> </a>
+          </li>
+          <li>   
+              <a href="#" class="nav-link link-dark">
+                <i class="fa-solid fa-bank"></i>   
+               <p>Instituições</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+                <i class="fa-solid fa-user-gear"></i>
+                <p>Usuário</p></a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+                <i class="fa-solid fa-file"></i>
+                <p>Relatório</p></a>
+          </li>
+        </ul>  
+      </div>
+   <div id="content">
+       <div class="title">
+        <h1>Alimentos não Perecíveis</h1>
+       </div>
+       <div class="addMassa">
+           <button class="addButtonMass" href="#">Adicionar em massa <i id="massaIcon" class="fas fa-plus-circle"></i></button>
+       </div>
+       <div class="formulário">
+       <div class="row">
+        <form class="d-flex justify-content-around">
+            <div class="form-group" >
+              <label for="exampleInputEmail1">Produtor/Doador</label>
+              <input class="form-control" placeholder="Informe o doador">
+            </div>
+            <div class="form-group">
+              <label>Produto</label>
+              <input class="form-control" placeholder="Informe o item doado">
+            </div>
+            <div class="form-group">
+                <label>Quantidade</label>
+                <input class="form-control" placeholder="Informe a quantidade">
+              </div>
+              <div>
+            <button type="button" class="btn btn-success"> <i class="fas fa-plus-circle"></i> </button>
+            </div>
+          </form>
+       </div>
+   </div>  
+   </div> 
+</body>
+</html>

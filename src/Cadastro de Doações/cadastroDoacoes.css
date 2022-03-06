@@ -1,0 +1,60 @@
+p {
+  display: inline;
+  padding-left: 2em;
+  font-size: 1.3em;
+}
+
+.d-flex {
+  width: 20em;
+  height: 100vh;
+}
+
+i {
+  font-size: 2.5em;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+#sidebar {
+  float: left;
+}
+
+form {
+  display: flex;
+}
+
+.btn {
+  max-height: 4em;
+  background-color: #30b6a0 !important;
+}
+
+h1 {
+  font-size: 35px !important;
+  background-color: #f8f9fa;
+}
+
+.addButtonMass {
+  background-color: #314945;
+  color: #e1f4f1;
+  width: 110vh;
+  height: 3em;
+  text-align: right;
+}
+
+.addMassa {
+  margin: 2em;
+}
+
+i.fas {
+  font-size: 1em;
+}
+
+#massaIcon {
+  color: #e1f4f1;
+}
+
+.formulário {
+  width: 112vh;
+  float: left;
+  align-items: center;
+}

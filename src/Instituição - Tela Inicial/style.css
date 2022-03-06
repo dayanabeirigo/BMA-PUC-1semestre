@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 64px 50px 1fr;
+    grid-template-areas: 'logo header' 'nav section' 'nav main';
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.logo {
+    display: flex;
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.cabecalho {
+    padding-left: 20px;
+    grid-area: header;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background: #4e4c59;
+    color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.menutopo ul li {
+    display: inline;
+    padding: 0 15px;
+    font-size: 10pt;
+}
+
+.menulateral {
+    grid-area: nav;
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.menulateral ul a {
+    color: #4e4c59;
+    display: block;
+    padding: 15px;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.menulateral ul a:hover {
+    background-color: #00b074;
+    color: #f2f2f2;
+}
+
+.menulateral ul a i {
+    margin-right: 16px;
+}
+
+.título {
+    grid-area: section;
+    background-color: white;
+    color: #4e4c59;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    font-size: 14pt;
+    border-radius: 5px;
+}
+
+
+/* distancia entre título e ícone */
+
+.título i {
+    margin-right: 10px;
+}
+
+.pesquisa {
+    background: white;
+    padding: 20px;
+    float: right;
+    grid-area: main;
+    display: grid;
+    grid-template-rows: min-content min-content max-content;
+    grid-template-areas: 'input' 'button' 'resultado';
+    border-radius: 5px;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.input {
+    grid-area: input;
+    display: flex;
+    justify-content: space-between;
+    color: #4e4c59;
+    font-size: 11pt;
+}
+
+#cnpj,
+#instituicao,
+#situacao,
+#tipo {
+    border: none;
+    padding: 0 10px;
+    height: 35px;
+    outline: none;
+}
+
+#cnpj {
+    width: auto;
+}
+
+#instituicao {
+    width: auto;
+}
+
+#situacao {
+    width: auto;
+}
+
+#tipo {
+    width: auto;
+}
+
+.button {
+    grid-area: button;
+    justify-content: space-between;
+    display: flex;
+}
+
+.inputBox label {
+    font-weight: bold;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#pesquisa {
+    width: 70%;
+}
+
+#pesquisa,
+#cadastrar {
+    border: 1px solid #00b074;
+    background-color: #00b074;
+    color: white;
+    font-size: medium;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#pesquisa:active {
+    background-color: #84bdaa;
+}
+
+#cadastrar:active {
+    background-color: #84bdaa;
+}
+
+.resultado {
+    grid-area: resultado;
+    overflow-x: auto;
+    border: 0;
+    border-collapse: collapse;
+}
+
+
+/* formatação da tabela */
+
+.registros {
+    width: 100%;
+    text-align: left;
+    border: 0;
+}
+
+.registros th {
+    height: 50px;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 15px;
+    background-color: gainsboro;
+}
+
+.registros td {
+    height: 50px;
+    font-size: 11pt;
+    text-align: center;
+}
+
+.registros tr:hover {
+    background-color: whitesmoke;
+}
+
+@media (max-width: 480px) {
+    .registros {
+        border-spacing: 5px;
+    }
+    .registros td {
+        margin: 0px 0;
+    }
+}
+
+.nome1 {
+    min-width: 200px;
+}
+
+.cnpj1 {
+    min-width: 200px;
+}
+
+.sit1 {
+    min-width: 90px;
+}
+
+.end1 {
+    min-width: 300px;
+}
+
+.fun1 {
+    min-width: 400px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 70px 1fr;
+        grid-template-areas: 'logo header' 'section section' 'main main';
+    }
+    .menulateral {
+        position: absolute;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: calc(100% - 94px);
+        top: 84px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .input {
+        display: block;
+    }
+    .button {
+        display: block;
+    }
+    #pesquisa,
+    #cadastrar {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .inputBox {
+        margin-bottom: 5px;
+    }
+    #cnpj,
+    #instituicao,
+    #situacao,
+    #tipo {
+        width: 100%;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- Esta tela realiza o cadastro das intituições que efetivam a distribuição de cestas básicas e verdes, bem como alimentos, ou seja, o BMA, CRAS e Entidades Socioassitenciais -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wgth@100;300&display=swap"
+    />
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <nav class="sidebar">
+      <header>Logo</header>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-hand-holding-dollar"></i>Doações</a
+          >
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-basket-shopping"></i>Cestas</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-bars-staggered"></i>Triagem</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-users"></i>Beneficiários</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-bank"></i>Instituições</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-user-gear""></i>Usuário</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa-solid fa-file"></i>Relatório</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <nav>
+        <u id="menu-h">
+         <li><a href="https://www.google.com/search?q=jogar%20Paci%C3%AAncia&stick=H4sIAAAAAAAAAOOwfcQoxS3w8sc9YSnBSWtOXmPk5uIMzs_JLEnMLErlAQB9SYN_HwAAAA">Home</a></li>
+         <li><a href="https://www.google.com/search?q=jogar%20Paci%C3%AAncia&stick=H4sIAAAAAAAAAOOwfcQoxS3w8sc9YSnBSWtOXmPk5uIMzs_JLEnMLErlAQB9SYN_HwAAAA">BMA</a></li>
+          <li><a href="https://www.google.com/search?q=jogar%20Paci%C3%AAncia&stick=H4sIAAAAAAAAAOOwfcQoxS3w8sc9YSnBSWtOXmPk5uIMzs_JLEnMLErlAQB9SYN_HwAAAA">Login</a></li>
+        </u>
+      </nav>
+
+      <!-- parte para inserção de dados da instituição  -->
+      <div class="box">  
+        <form action="">
+
+          <h1>Cadastro de Instituições</h1>
+  <fieldset class="basic">
+    <legend>Dados Básicos</legend>
+
+          <div class="inputBox">
+            <label for="instiuicao">Nome</label>
+            <input type="text" name="instituicao" id="instituicao" class="inputuser" placeholder="Nome da Instituição" required>
+          </div>
+  
+          <div class="inputBox">
+            <label for="cnpj">CNPJ</label> 
+            <input type="text" name="cnpj" id="cnpj" class="inputuser" placeholder="00.000.000.0000/00" required>
+          </div>
+  
+          <div class="inputBox">
+            <label for="situacao">Situação</label>
+            <select id="situacao" class="inputuser2" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Ativa</option>
+              <option>Inativa</option> 
+            </select>
+           </div>
+
+
+          <div class="inputBox">
+          <label for="tipo">Tipo</label>
+          <select id="situacao" class="inputuser2" required>
+            <option selected disabled value="">Selecione</option>
+            <option>Entidade Socioassistencial</option>
+            <option>Equipamento Público</option>
+          </select>
+          </div>
+
+        <div class="inputBox">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="inputuser" placeholder="email@example.com" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="telefone">Telefone</label> 
+          <input type="tel" name="telefone" id="telefone" class="inputuser" placeholder="(00)00000-0000" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="funcionamento">Funcionamento</label>
+          <input type="text" name="funcionamento" id="funcionamento" class="inputuser"  placeholder="De seg a sex, 8h00 às 18h00" required>
+         </div>
+         
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <div class="inputBox">
+          <label for="logradouro">Logradouro</label> 
+          <input type="text" name="logradouro" id="logradouro" class="inputuser" placeholder="Rua, Avenida, Travessa, Alameda" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="numero">Número</label> 
+          <input type="number" name="numero" id="numero" class="inputuser" placeholder="00000000" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="complemento">Complemento</label> 
+          <input type="text" name="complemento" id="complemento" class="inputuser" placeholder="Casa, Apto, Bloco, Andar" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="bairro">Bairro</label> 
+          <input type="text" name="bairro" id="bairro" class="inputuser" placeholder="Bairro" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="cep">CEP</label> 
+          <input type="text" name="cep" id="cep" class="inputuser" placeholder="CEP" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="cidade">Cidade</label> 
+          <input type="text" name="cidade" id="cidade" class="inputuser" placeholder="Poços de Caldas" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="estado">Estado</label> 
+          <input type="text" name="estado" id="estado" class="inputuser" placeholder="Minas Gerais" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+
+        <legend>Contato</legend>
+        <div class="inputBox">
+          <label for="responsavel">Nome do Responsável</label> 
+          <input type="text" name="responsavel" id="responsavel" class="inputuser" placeholder="Nome do Responsável" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="cpf">CPF</label> 
+          <input type="number" name="cpf" id="cpf" class="inputuser" placeholder="000.000.000-00" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="telefone">Telefone</label> 
+          <input type="tel" name="telefone" id="telefone2" class="inputuser" placeholder="(00)00000-0000" required>
+        </div>
+
+        <div class="inputBox">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email2" class="inputuser" placeholder="email@example.com" required>
+      </div>
+
+
+
+    </fieldset>
+ 
+
+    <div class="mb-3">
+      <label for="formFileMultiple" class="form-label"></label>
+      <input class="form-control" type="file" id="formFileMultiple" multiple>
+    </div>
+
+
+<div class="button"> 
+  <input type="submit" value="Salvar" name="salvar" id="salvar">
+
+
+  <input type="submit" value="Editar" name="editar" id="editar">
+
+  <input type="submit" value="Desativar" name="desativar" id="desativar">
+ </div>
+  
+        </form>
+      </div>
+    </section>
+
+    
+  </body>
+</html>

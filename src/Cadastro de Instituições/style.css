@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* os comandos a seguir se referem ao menu esquerdo */
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all 0.5s ease;
+}
+
+.sidebar header {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+
+.sidebar ul a {
+  display: block;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 18px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+
+ul li:hover {
+  padding-left: 50px;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  background: #042331;
+  border-radius: 3px;
+  position: absolute;
+  cursor: pointer;
+}
+
+label #btn {
+  left: 40px;
+  top: 20px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+
+section {
+  background: #ecf0f1;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  transition: 0.5s;
+}
+
+#check:checked ~ section {
+  margin-left: 250px;
+}
+/* comandos se referem às caixas de formulário */
+
+fieldset {
+  border: none;
+  padding: 0px 0px 30px;
+}
+
+fieldset legend {
+  padding: 0px 0px 20px;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+.inputBox {
+  padding: 0px 0px 15px;
+}
+
+.box {
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 100px;
+}
+
+.box h1 {
+  padding-bottom: 40px;
+}
+.box form fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 800px;
+  justify-content: space-between;
+}
+
+.inputuser {
+  width: 240px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+.inputuser2 {
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+.button input {
+  height: 30px;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* os comandos a seguir se referem ao menu superior */
+#menu-h {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+  background: #042331;
+  list-style: none;
+}
+
+#menu-h {
+  right: 500px;
+  left: 500px;
+  width: 100%;
+  height: 100%;
+
+  line-height: 70px;
+}
+/* distancia entre objetos do menu superior */
+#menu-h li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+#menu-h li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+/* transicao de cor quando passar o cursor em cima das opcoes */
+#menu-h li a:hover {
+  color: #3684a8;
+}
